@@ -1,7 +1,10 @@
 # Welcome to my Remix template!
 
 - [Remix Docs](https://remix.run/docs)
+- [TypeScript Docs](https://www.typescriptlang.org/docs/)
 - [TailwindCSS Docs](https://tailwindcss.com/docs/utility-first)
+- [Prettier Docs](https://prettier.io/docs/en/index.html)
+- [ESLint Config Docs](https://eslint.org/docs/user-guide/configuring/)
 
 This is a slightly opinionated template for use with Remix.run. It includes the latest React (18rc2 as of now), TypeScript, Tailwind CSS, ESLint and Prettier, with a handful of styles and rules to get started. Feel free to change at will.
 
