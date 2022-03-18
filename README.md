@@ -5,6 +5,12 @@
 
 This is a slightly opinionated template for use with Remix.run. It includes the latest React (18rc2 as of now), TypeScript, Tailwind CSS, ESLint and Prettier, with a handful of styles and rules to get started. Feel free to change at will.
 
+From your terminal:
+
+```sh
+yarn create remix --template vicadam/remix-template-ts-tailwindcss-prettier
+```
+
 ## Yarn or NPM
 
 The scripts are setup for `yarn` but can easily be modified for `npm run`.
