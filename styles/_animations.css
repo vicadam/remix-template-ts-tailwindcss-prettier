@@ -1,0 +1,423 @@
+/* ----------------------------------------------
+ * ANIMATIONS - http://animista.net
+ * ---------------------------------------------- */
+.flip-in-hor-bottom {
+  -webkit-animation: flip-in-hor-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: flip-in-hor-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+    transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+    transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 650ms cubic-bezier(0.55, 0.085, 0.68, 0.53) 250ms both;
+  animation: text-focus-in 650ms cubic-bezier(0.55, 0.085, 0.68, 0.53) 250ms both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.scale-down-center {
+  -webkit-animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+}
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+}
+
+/* INVALID LOGIN */
+/**
+ * ----------------------------------------
+ * animation shake-horizontal
+ * ----------------------------------------
+ */
+@-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+}
+
+/**
+ * ----------------------------------------
+ * QR Code Animation
+ * ----------------------------------------
+ */
+.icon-qr-code .svg__scan-bar {
+  animation: scanning-bar linear 1.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: scanning-bar linear 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes scanning-bar {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0px, 90%);
+    transform: translate(0px, 90%);
+  }
+  100% {
+    -webkit-transform: translate(0px, 95%);
+    transform: translate(0px, 95%);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0%);
+    transform: translate(0px, 0%);
+  }
+}
+
+@-webkit-keyframes scanning-bar {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0px, 90%);
+  }
+  100% {
+    -webkit-transform: translate(0px, 95%);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0%);
+  }
+}
+
+/**
+ * ----------------------------------------
+ * Breath
+ * ----------------------------------------
+ */
+@keyframes breath {
+  0% {
+    animation-timing-function: cubic-bezier(0.9647, 0.2413, -0.0705, 0.7911);
+    transform: scale(0.9099999999999999);
+  }
+
+  51% {
+    animation-timing-function: cubic-bezier(0.9226, 0.2631, -0.0308, 0.7628);
+    transform: scale(1.02994) rotate(-5deg);
+  }
+
+  100% {
+    transform: scale(0.9099999999999999);
+  }
+}
+
+/**
+ * ----------------------------------------
+ * Animated Scrolldown
+ * ----------------------------------------
+ */
+/* $base: 0.6rem; */
+.scrolldown-chevron-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 24px;
+  height: 48px;
+  margin-top: -13px;
+}
+
+.scrolldown-chevron {
+  position: absolute;
+  width: calc(0.4rem * 3.5);
+  height: calc(0.4rem * 0.8);
+  opacity: 0;
+  transform: scale(0.3);
+  animation: move-chevron 3s ease-out infinite;
+}
+
+.scrolldown-chevron:first-child {
+  animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.scrolldown-chevron:nth-child(2) {
+  animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.scrolldown-chevron:before,
+.scrolldown-chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #ffffff;
+}
+
+.scrolldown-chevron:before {
+  left: 0;
+  transform: skewY(30deg);
+}
+
+.scrolldown-chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skewY(-30deg);
+}
+
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(calc(0.4rem * 3.8));
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(calc(0.4rem * 5.2));
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(calc(0.4rem * 8)) scale(0.5);
+  }
+}
+
+.chevron-jump-container {
+  transform: rotate(90deg);
+}
+
+.scrollup-chevron-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 32px;
+  height: 1px;
+  margin-top: 40px;
+  margin-bottom: -16px;
+}
+
+.scrollup-chevron {
+  position: absolute;
+  width: calc(0.4rem * 3.5);
+  height: calc(0.4rem * 0.8);
+  opacity: 0;
+  transform: scale(0.3);
+  animation: move-chevron-up 3s ease-out infinite;
+}
+
+.scrollup-chevron:first-child {
+  animation: move-chevron-up 3s ease-out 1s infinite;
+}
+
+.scrollup-chevron:nth-child(2) {
+  animation: move-chevron-up 3s ease-out 2s infinite;
+}
+
+.scrollup-chevron:before,
+.scrollup-chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #f9fafb;
+}
+
+.chevron-jump-container .scrollup-chevron:before,
+.chevron-jump-container .scrollup-chevron:after {
+  @apply bg-emerald-500;
+}
+
+.scrollup-chevron:before {
+  left: 0;
+  transform: skewY(-30deg);
+}
+
+.scrollup-chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skewY(30deg);
+}
+
+@keyframes move-chevron-up {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(calc(0.4rem * -3.8));
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(calc(0.4rem * -5.2));
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(calc(0.4rem * -8)) scale(0.5);
+  }
+}
+
+@keyframes enter {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-enter {
+  animation: enter 0.2s ease-out;
+}
+
+@keyframes leave {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+
+.animate-leave {
+  animation: leave 0.15s ease-in forwards;
+}
